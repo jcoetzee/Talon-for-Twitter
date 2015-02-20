@@ -38,3 +38,4 @@ proguard/
 Other/Video/
 *.mp4
 keystore
+gradle.properties
