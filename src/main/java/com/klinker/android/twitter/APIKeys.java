@@ -41,7 +41,7 @@ public class APIKeys {
      * Here is how you can get a key for yourself:
      * https://developers.google.com/youtube/android/player/register
      */
-    public static String YOUTUBE_API_KEY = "";
+    public static String YOUTUBE_API_KEY = "AIzaSyBOUDs9FuILOtrPeLuBy-BK60NY20oOsnE";
 
     /**
      * These are third party service API keys for Talon.
