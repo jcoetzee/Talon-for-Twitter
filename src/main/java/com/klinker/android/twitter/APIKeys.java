@@ -30,8 +30,8 @@ public class APIKeys {
      *
      * For steps to creating an application, view the Readme.md
      */
-    public static String TWITTER_CONSUMER_KEY = "";
-    public static String TWITTER_CONSUMER_SECRET = "";
+    public static String TWITTER_CONSUMER_KEY = "xMDkaTqMja9YEJx6UKF0N5OSW";
+    public static String TWITTER_CONSUMER_SECRET = "o4xa8ZBr0CMo0arOx1lowfxQgOv2Fk5cooWT3LzCwNOqZlcsPa";
 
     /**
      * For the In-App Youtube Player
