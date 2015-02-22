@@ -17,8 +17,8 @@
 #}
 
 -keep class !android.support.v7.internal.view.menu.**,** {*;}
--dontwarn
+#-dontwarn
 -ignorewarnings
--dontshrink
--dontoptimize
--dontobfuscate
+#-dontshrink
+#-dontoptimize
+#-dontobfuscate
