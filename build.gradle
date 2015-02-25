@@ -5,8 +5,8 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.1'
-        classpath 'org.robolectric:robolectric-gradle-plugin:0.14.1'
+        classpath 'com.android.tools.build:gradle:1.1.1'
+        classpath 'org.robolectric:robolectric-gradle-plugin:1.0.0'
     }
 }
 
@@ -23,7 +23,7 @@ allprojects {
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'robolectric'
+apply plugin: 'org.robolectric'
 
 android {
     packagingOptions {
