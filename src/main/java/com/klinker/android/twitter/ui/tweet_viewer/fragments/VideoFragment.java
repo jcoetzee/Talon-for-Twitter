@@ -54,6 +54,12 @@ public class VideoFragment extends Fragment {
         video = (VideoView) layout.findViewById(R.id.gif);
         spinner = (LinearLayout) layout.findViewById(R.id.spinner);
 
+        if (tweetUrl.contains("video.twimg")) {
+            MediaController mediaController = new MediaController(getActivity());
+            mediaController.setAnchorView(video);
+            video.setMediaController(mediaController);
+        }
+
         getGif();
 
         return layout;
@@ -90,9 +96,15 @@ public class VideoFragment extends Fragment {
                                         @Override
                                         public void onPrepared(MediaPlayer mp) {
                                             spinner.setVisibility(View.GONE);
-
                                             video.setBackgroundColor(getActivity().getResources().getColor(android.R.color.transparent));
-                                            mp.setLooping(true);
+                                        }
+                                    });
+
+                                    video.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                        @Override
+                                        public void onCompletion(MediaPlayer mp) {
+                                            mp.seekTo(0);
+                                            mp.start();
                                         }
                                     });
 
